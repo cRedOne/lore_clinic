@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lore Clinic — Центр естетичної медицини та косметології | Харків</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Добавили Montserrat (геометричный шрифт как на лого) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ШАПКА И МЕНЮ (Стеклянный эффект + анимированное лого по твоим правилам) -->
+  <header class="header header-glass">
+    <div class="header-container">
+      
+      <a href="#" class="logo-wrapper">
+        <div class="logo-face-placeholder">
+            <img src="content/logo2.png" alt="Logo">
+        </div>
+
+        <div class="logo-text-block">
+          <div class="logo-grid">
+            <div class="logo-row">
+              <span class="letter" id="let-l">L</span>
+              <span class="letter" id="let-o">O</span>
+            </div>
+            <div class="logo-row">
+              <span class="letter" id="let-r">R</span>
+              <span class="letter" id="let-e">E</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="nav-mobile-wrapper" id="navMobileWrapper">
+        <nav class="nav">
+          <a href="#philosophy" class="nav-link">Філософія</a>
+          <a href="#showcase" class="nav-link">Вітрина</a>
+          <a href="#price" class="nav-link">Послуги та ціни</a>
+          <a href="#location" class="nav-link">Локація</a>
+          <a href="#masters" class="nav-link">Майстри</a>
+          <a href="#contacts" class="btn-primary btn-bright nav-link">Записатися</a>
+        </nav>
+
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="uk">UA</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+
+      <button class="burger-btn" id="burgerBtn" aria-label="Відкрити меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+   <!-- ГЕРОЙ БЛОК (HERO) -->
+    <section class="hero-section">
+      <div class="hero-bg-wrapper">
+		  <video class="hero-bg-img" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1920&auto=format&fit=crop">
+			<source src="content/hero1.mp4" type="video/mp4">
+			<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1920&auto=format&fit=crop" alt="Lore Klinik Care" class="hero-bg-img">
+		  </video>
+		</div>
+      
+      
+    </section>
+
+    <!-- БЛОК ФІЛОСОФІЯ -->
+    <section id="philosophy" class="section philosophy-section">
+	  <div class="container">
+		<div class="bg-glow-orb"></div>
+		<div class="grid-2 philosophy-header-grid">
+		  <div class="philosophy-title-box">
+			<span class="section-tag">Про клініку</span>
+			<h2>Філософія м'якого омолодження</h2>
+		  </div>
+		  <div class="philosophy-text">
+			<p class="lead-text">
+			  Ми підкреслюємо вашу індивідуальну красу, не змінюючи риси обличчя. 
+			  Справжня естетика полягає у свіжості, гармонії та збереженні вашої унікальності.
+			</p>
+			<p>
+			  У нашій роботі немає місця шаблонам та радикальним втручанням. 
+			  Ми поєднуємо медичний досвід, безпеку світового рівня та тонке відчуття пропорцій, 
+			  щоб кожен результат виглядав природно та невимушено.
+			</p>
+		  </div>
+		</div>
+
+		<div class="philosophy-cards">
+		  <div class="philosophy-card">
+			<span class="card-num">01</span>
+			<h3>Природність</h3>
+			<p>Зберігаємо ваші міміку та унікальні риси. Ніякого ефекту «перетягнутого» чи штучного обличчя.</p>
+		  </div>
+
+		  <div class="philosophy-card">
+			<span class="card-num">02</span>
+			<h3>Безпека</h3>
+			<p>Використовуємо лише сертифіковані препарати світового рівня та безпечні лазерні системи.</p>
+		  </div>
+
+		  <div class="philosophy-card">
+			<span class="card-num">03</span>
+			<h3>Персоніфікація</h3>
+			<p>Розробляємо індивідуальні б’юті-протоколи з урахуванням анатомії та побажань кожного пацієнта.</p>
+		  </div>
+		</div>
+
+	  </div>
+	</section>
+
+    <!-- БЛОК ВІТРИНА (СЛАЙДЕР НА 10 ФОТО) -->
+    <section id="showcase" class="section showcase-section">
+	  <div class="container">
+		<div class="section-header">
+		  <span class="section-tag">Галерея</span>
+		  <h2>Вітрина процедур</h2>
+		  <p>Атмосфера клініки та результати роботи наших фахівців</p>
+		</div>
+
+		<div class="slider-container">
+		  <div class="slider-track" id="sliderTrack">
+			<div class="slide-card"><img src="content/sl1.png" alt="Процедура 1" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl2.png" alt="Процедура 2" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl3.png" alt="Процедура 3" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl4.png" alt="Процедура 4" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl5.png" alt="Процедура 5" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl6.png" alt="Процедура 6" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl7.png" alt="Процедура 7" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl8.png" alt="Процедура 8" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl9.png" alt="Процедура 9" loading="lazy"></div>
+			<div class="slide-card"><img src="content/sl10.png" alt="Процедура 10" loading="lazy"></div>
+		  </div>
+
+		  <div class="slider-dots" id="sliderDots"></div>
+		</div>
+	  </div>
+	</section>
+
+    <!-- БЛОК ПРАЙС (АККОРДЕОН НА 4 УСЛУГИ + МОДАЛКА) -->
+    <section id="price" class="section price-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Послуги та вартість</h2>
+          <p>Основні напрямки. Натисніть на категорію, щоб розгорнути прайс.</p>
+        </div>
+
+        <div class="accordion">
+		  <div class="accordion-item">
+			<button class="accordion-header">
+			  <span>Естетична та ін’єкційна медицина</span>
+			  <span class="icon">+</span>
+			</button>
+			<div class="accordion-content-wrapper">
+			  <div class="accordion-content">
+				<div class="accordion-content-inner">
+				  <div class="price-row"><span>Контурна пластика (Juvederm / Belotero)</span> <span>від 4 200 ₴</span></div>
+				  <div class="price-row"><span>Ботулінотерапія (Botox / Disport / Xeomin)</span> <span>2 000 ₴</span></div>
+				  <div class="price-row"><span>Біоревіталізація</span> <span>від 1 600 ₴</span></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="accordion-item">
+			<button class="accordion-header">
+			  <span>Лазерні технології & Епіляція LUMENIS</span>
+			  <span class="icon">+</span>
+			</button>
+			<div class="accordion-content-wrapper">
+			  <div class="accordion-content">
+				<div class="accordion-content-inner">
+				  <div class="price-row"><span>Лазерна епіляція (Глибоке бікіні)</span> <span>850 ₴</span></div>
+				  <div class="price-row"><span>Лазерне омолодження обличчя</span> <span>2 500 ₴</span></div>
+				  <div class="price-row"><span>Фракційне шліфування</span> <span>від 2 100 ₴</span></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="accordion-item">
+			<button class="accordion-header">
+			  <span>Доглядова косметологія та Чистки</span>
+			  <span class="icon">+</span>
+			</button>
+			<div class="accordion-content-wrapper">
+			  <div class="accordion-content">
+				<div class="accordion-content-inner">
+				  <div class="price-row"><span>Комплексна чистка обличчя</span> <span>1 100 ₴</span></div>
+				  <div class="price-row"><span>Карбокситерапія Geneo</span> <span>1 900 ₴</span></div>
+				  <div class="price-row"><span>Догляди MANSARD</span> <span>від 800 ₴</span></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="accordion-item">
+			<button class="accordion-header">
+			  <span>Корекція фігури & Апаратний масаж</span>
+			  <span class="icon">+</span>
+			</button>
+			<div class="accordion-content-wrapper">
+			  <div class="accordion-content">
+				<div class="accordion-content-inner">
+				  <div class="price-row"><span>SMAS-ліфтинг обличчя</span> <span>12 000 ₴</span></div>
+				  <div class="price-row"><span>Апаратний масаж Drumroll (30 хв)</span> <span>500 ₴</span></div>
+				  <div class="price-row"><span>Пресотерапія</span> <span>480 ₴</span></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+        <!-- Кнопка вызова полного прайса -->
+        <div class="full-price-trigger">
+          <button class="btn-outline" id="openModalBtn">Відкрити повний прайс-лист клініки</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК ЛОКАЦИЯ (МЕСТО) -->
+    <section id="location" class="section location-section">
+      <div class="container grid-2">
+        <div class="location-info">
+          <span class="section-tag">Локація</span>
+          <h2>Завітайте до нас</h2>
+          <p class="address-text">м. Харків, вул. Данилевського, 32 Б</p>
+          <p>Зручна парковка, затишна атмосфера та абсолютна конфіденційність.</p>
+          
+          <div class="location-details-meta">
+            <div class="meta-item">
+              <span class="meta-label">Телефон:</span>
+              <a href="tel:+380678400987">+38 (067) 840-09-87</a>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Графік:</span>
+              <span>Щодня за попереднім записом</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container-box" id="mapContainer">
+          <div class="map-placeholder-overlay" id="mapOverlay">
+            <img src="content/mapP.png" alt="Локація Lore Clinic" class="map-preview-img">
+            
+            <div class="map-prompt-wrapper">
+              <svg class="google-pin-svg" viewBox="0 0 40 60" width="38" height="54">
+				<path fill="#82C91E" d="M19 0C8.503 0 0 8.503 0 19c0 10.795 13.169 32.547 17.646 39.483.78 1.185 2.528 1.185 3.308 0C25.831 51.547 39 29.795 39 19 39 8.503 30.497 0 19 0z"/>
+				<circle fill="#FFFFFF" cx="19" cy="19" r="6.5"/>
+				</svg>
+              <div class="map-prompt-text-box">
+                Натисніть для перегляду карти
+              </div>
+            </div>
+          </div>
+
+        <iframe 
+  id="googleMapFrame"
+  class="google-map-iframe"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.8970425021235!2d36.22301417684074!3d50.00331901399389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1f59239aa8f%3A0x2774db89606d5eb0!2z0YPQuy4g0JHQvtNC0LjQs9C40L3RgdGM0LrQsCwgMzLIqCwg0KXQsNGA0YHRow!5e0!3m2!1suk!2sua!4v1700000000000!5m2!1suk!2sua6"
+  width="100%" 
+  height="100%" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Google Карта - вул. Данилевського, 32 Б">
+</iframe>
+      </div>
+    </section>
+
+    <!-- БЛОК МАЙСТРИ -->
+    <section id="masters" class="section masters-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Команда</span>
+          <h2>Наші фахівці</h2>
+          <p>Лікарі-косметологи з вищою медичною освітою</p>
+        </div>
+
+        <div class="masters-grid">
+          
+          <div class="master-card">
+            <div class="master-photo-wrapper">
+              <div class="master-photo-inner">
+                <img src="content/doc1.png" alt="Анна" class="master-photo">
+              </div>
+            </div>
+            <h3>Олена Шевченко</h3>
+            <div class="master-role">Головний лікар</div>
+            <p class="master-desc">Естетична та ін’єкційна медицина, контурна пластика</p>
+          </div>
+
+          <div class="master-card">
+            <div class="master-photo-wrapper">
+              <div class="master-photo-inner">
+                <img src="content/doc2.png" alt="Марина" class="master-photo">
+              </div>
+            </div>
+            <h3>Марина Коваль</h3>
+            <div class="master-role">Косметолог-естетист</div>
+            <p class="master-desc">Апаратні методики, пілінги, доглядові процедури</p>
+          </div>
+
+          <div class="master-card">
+            <div class="master-photo-wrapper">
+              <div class="master-photo-inner">
+                <img src="content/doc3.png" alt="Тетяна" class="master-photo">
+              </div>
+            </div>
+            <h3>Тетяна Мельник</h3>
+            <div class="master-role">Лазеротерапевт</div>
+            <p class="master-desc">Лазерна епіляція Lumenis, омолодження та шліфування</p>
+          </div>
+
+          <div class="master-card">
+            <div class="master-photo-wrapper">
+              <div class="master-photo-inner">
+                <img src="content/doc4.png" alt="Юлія" class="master-photo">
+              </div>
+            </div>
+            <h3>Юлія Бондаренко</h3>
+            <div class="master-role">Трихолог</div>
+            <p class="master-desc">Діагностика та лікування шкіри голови та волосся</p>
+          </div>
+
+          <div class="master-card">
+            <div class="master-photo-wrapper">
+              <div class="master-photo-inner">
+                <img src="content/doc1.png" alt="Вікторія" class="master-photo">
+              </div>
+            </div>
+            <h3>Вікторія Дмитренко</h3>
+            <div class="master-role">Спеціаліст з тіла</div>
+            <p class="master-desc">SMAS-ліфтинг, апаратний масаж та корекція фігури</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК КОНТАКТЫ И ЗАПИСЬ -->
+    <section id="contacts" class="section contacts-section">
+      <div class="container text-center">
+        <span class="section-tag">Зв'язок з нами</span>
+        <h2>Записатися на прийом</h2>
+        <p class="contacts-phone">+38 (067) 840-09-87</p>
+        
+        <div class="profile-stats">
+          <span>▫️ Естетична медицина</span>
+          <span>▫️ Лазерні технології</span>
+          <span>▫️ Косметологія</span>
+          <span>▫️ Трихологія</span>
+          <span>▫️ Корекція фігури</span>
+        </div>
+
+        <div class="contacts-action-box">
+          <a href="https://www.instagram.com/lore_kharkiv/" target="_blank" class="btn-primary btn-bright btn-pulse">
+            Записатися
+          </a>
+        </div>
+
+        <div class="social-links-grid">
+          <a href="https://www.instagram.com/lore_kharkiv/" target="_blank" class="social-card">
+            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://t.me/" target="_blank" class="social-card">
+            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.534.26l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832 1.021z"/></svg>
+            <span>Telegram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- МОДАЛЬНОЕ ОКНО ПОЛНОГО ПРАЙСА -->
+  <div class="modal" id="priceModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModalBtn">&times;</button>
+      <h3>Повний прайс-лист Lore Klinik</h3>
+      <div class="modal-body">
+        <p><em>Завантаження повного оцифрованого списку процедур...</em></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
